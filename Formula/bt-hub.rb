@@ -28,7 +28,9 @@ class BtHub < Formula
   end
 
   test do
-    assert_predicate prefix/"BT Hub.app/Contents/MacOS/BTHub", :executable?
-    assert_match "dev.salamahin.bthub", shell_output("/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' '#{prefix}/BT Hub.app/Contents/Info.plist'")
+    app = prefix/"BT Hub.app"
+    assert_predicate app/"Contents/MacOS/BTHub", :executable?
+    assert_match "dev.salamahin.bthub",
+                 shell_output("/usr/libexec/PlistBuddy -c 'Print CFBundleIdentifier' '#{app}/Contents/Info.plist'")
   end
 end

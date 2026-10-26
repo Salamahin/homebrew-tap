@@ -1,8 +1,8 @@
 class BtHub < Formula
   desc "Menu bar app to move Bluetooth audio devices between your Macs"
   homepage "https://github.com/Salamahin/bt-hub"
-  url "https://github.com/Salamahin/bt-hub/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "e1623525361a4058b7521225503ae50f3246444e5e1dc86ab9a66d8de5cbfdb6"
+  url "https://github.com/Salamahin/bt-hub/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "ea3f8382c2ec87fbf4b05aff16c8a563e83e1d14f13dd2c2f396bf5a258b6b8c"
 
   depends_on macos: :sonoma
 
